@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Sanjay's Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#home" class="logo">Sanjay</a>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+<section class="home" id="home">
+
+    <div class="home-left">
+        <h1>Hi, It's <span class="blue-text">Sanjay</span></h1>
+        <h3 class="typing-text">I'm a <span></span></h3>
+
+        <p class="home-description">
+            A tech enthusiast who loves creating digital experiences 
+            that are simple and meaningful. Skilled in modern programming 
+            concepts and always curious to learn more. Driven by passion, 
+            creativity, and a desire to build things that matter.
+        </p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/imsanjayr/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/imsanjayr"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div class="btn-box">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn">Hire me</a>
+        </div>
+    </div>
+
+    <div class="home-right">
+        <div class="home-img-card">
+            <img src="main.png" alt="Profile Picture">
+        </div>
+    </div>
+
+</section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section">
+    <h2 class="section-title">
+        <span class="white-text">My</span> <span class="blue-text">Skills</span>
+    </h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-box">
+            <i class="fas fa-code skill-icon"></i>
+            <h3>Frontend Development</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6)</li>
+                <li>Responsive Design</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <i class="fas fa-server skill-icon"></i>
+            <h3>Backend & Database</h3>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+
+        <div class="skill-box">
+            <i class="fas fa-toolbox skill-icon"></i>
+            <h3>Tools & Others</h3>
+            <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VS Code</li>
+                <li>Windows</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+    <!-- EDUCATION -->
+<section class="education" id="education">
+    <h2 class="heading">My <span>Academics</span></h2>
+
+    <div class="timeline-vertical">
+
+        <div class="edu-card left">
+            <span class="dot"></span>
+            <h3>MBA — Master of Business Administration</h3>
+            <p class="edu-place">Academy Europe Open University</p>
+            <p class="edu-year">2022 – 2024</p>
+        </div>
+
+        <div class="edu-card right">
+            <span class="dot"></span>
+            <h3>B.Sc Computer Science</h3>
+            <p class="edu-place">Sri Krishna Arts & Science College</p>
+            <p>CGPA — 7.5</p>
+            <p class="edu-year">2021 – 2024</p>
+        </div>
+
+        <div class="edu-card left">
+            <span class="dot"></span>
+            <h3>B.Sc Business Studies</h3>
+            <p class="edu-place">School of Business & Trade, Switzerland</p>
+            <p>CGPA — 7.0</p>
+            <p class="edu-year">2021 – 2024</p>
+        </div>
+
+        <div class="edu-card right">
+            <span class="dot"></span>
+            <h3>ELGI High School</h3>
+            <p class="edu-place">Coimbatore</p>
+            <p>Percentage — 90%</p>
+            <p class="edu-year">2020 – 2021</p>
+        </div>
+
+    </div>
+</section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Recent <span>Projects</span></h2>
+
+        <div class="project-container">
+            <div class="project-box">
+                <h3>Travel Planner App</h3>
+                <p>A full-stack Travel Planner app built with Next.js, PostgreSQL, and Google Maps.</p>
+
+                <div class="project-buttons">
+                    <a href="https://github.com/imsanjayr/travel-planner" class="btn project-btn">View</a>
+                </div>
+            </div>
+
+        <div class="project-container">
+            <div class="project-box">
+                <h3>SKYSENSE - A Weather App</h3>
+                <p>A beautifully designed weather app with live forecasts and fluid animated SVG weather icons.</p>
+
+                <div class="project-buttons">
+                    <a href="https://github.com/imsanjayr/weather-app" class="btn project-btn">View</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="https://formspree.io/f/xanknzyr" method="POST" id="contact-form">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Sanjay. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
